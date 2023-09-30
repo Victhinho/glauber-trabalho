@@ -13,12 +13,21 @@ function Logo(){
   )
 }
 
+function ItemMenu({nome}){
+
+  return(
+    <p className={styles.itemMenu}>{nome}</p>
+  );
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
         <header>
           <Logo>Ready&Go</Logo>
+          <ItemMenu nome="Home"></ItemMenu>
+          <ItemMenu nome="About"></ItemMenu>
         </header>
         
         {children}</body>
