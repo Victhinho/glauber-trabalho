@@ -1,5 +1,6 @@
 import './globals.css'
 import styles from './styles.module.css'
+import Image from 'next/image'
 // import { Quicksand } from 'next/font/google'
 export const metadata = {
   title: 'Travel Landing Page',
@@ -29,6 +30,26 @@ function Menu({children, x, y}){
     );
 }
 
+function Text1({x,y, titulo, subTitulo}){
+  return(
+    <div style={{left: x, top: y}} className={styles.caixaDeTitulo}>
+      <p className={styles.text1}> {titulo}</p>
+      <p className={styles.text2}>{subTitulo} </p>
+    </div>
+  );
+}
+
+function Phone({x,y, numero}){
+  return(
+    <div style={{left: x, top: y}} className={styles.caixaDePhone}>
+      <Image src='/phoneicon.svg' width={19} height={19}/>
+      <p className={styles.numero}>{numero}</p>
+    </div>
+  )
+}
+
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -42,8 +63,9 @@ export default function RootLayout({ children }) {
           <ItemMenu nome="Blog"/>
           <ItemMenu nome="Videos"/>
           </Menu>
+          <Text1 x={135} y={230} titulo={"Your perfect honeymoon"} subTitulo={"Mayami is more than a honeymoon destination – it’s a perfect romantic spot for couples who like  spending time in beach. "}/>
+          <Phone x={1102} y={63} numero={"+38(097)8849989"}/>
         </header>
-        
         {children}</body>
     </html>
   )

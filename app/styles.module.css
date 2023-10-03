@@ -19,13 +19,53 @@
 }
 
 .menu{
-
     justify-content: space-between;
     display: flex;
-    list-style-type:none;;
+    list-style-type:none;
     position: absolute;
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
     width: 570px;
 }
+
+ .text1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 78px;
+}
+
+.text2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+} 
+
+.caixaDeTitulo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    color: white; 
+    gap: 30px;
+}
+
+.caixaDePhone{
+    display: flex;
+    gap: 14px;
+    position: absolute;
+    width: 202px;
+}
+
+.numero{
+    margin: 0px;
+    padding: 0px;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 169px;
+    height: 23px;
+}
+
