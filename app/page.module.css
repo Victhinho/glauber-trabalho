@@ -1,0 +1,12 @@
+.botaoIniciar{
+    color: white;
+    font-size: 21px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 298px;
+    height: 56px;
+    border-radius: 88px;
+    background: linear-gradient(94deg, #EED761 22%, #FFB9AF 78%);
+    box-shadow: 0px 3.52663px 35.26627px 0px rgba(255, 185, 175, 0.50);
+    border: 0;
+    position: absolute;
+}

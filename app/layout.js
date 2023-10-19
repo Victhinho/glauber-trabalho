@@ -10,7 +10,7 @@ export const metadata = {
 
 function Logo({x, y}){
   return(
-    <p style={{left: x, top: y}} className={styles.logo}>Ready<span className={styles.comercial}>&</span>Go</p>
+    <p style={{left: x, top: y}} className={styles.logo}>Prepare<span className={styles.comercial}>&</span>Vá</p>
   )
 }
 
@@ -57,13 +57,13 @@ export default function RootLayout({ children }) {
         <header>
           <Logo x={135} y={53}/>
           <Menu x={435} y={60}>
-          <ItemMenu nome="Home"/>
-          <ItemMenu nome="About"/>
-          <ItemMenu nome="Contact"/>
+          <ItemMenu nome="Pagina inicial"/>
+          <ItemMenu nome="Sobre"/>
+          <ItemMenu nome="Contato"/>
           <ItemMenu nome="Blog"/>
           <ItemMenu nome="Videos"/>
           </Menu>
-          <Text1 x={135} y={230} titulo={"Your perfect honeymoon"} subTitulo={"Mayami is more than a honeymoon destination – it’s a perfect romantic spot for couples who like  spending time in beach. "}/>
+          <Text1 x={135} y={230} titulo={"Sua Perfeita Lua de Mel"} subTitulo={"Miami é o melhor destino para a sua lua de mel – é um lugar perfeitamente romântico, para casais que gostam de curtir um tempo na praia. "}/>
           <Phone x={1102} y={63} numero={"+38(097)8849989"}/>
         </header>
         {children}</body>
