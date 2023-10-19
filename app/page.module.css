@@ -10,3 +10,19 @@
     border: 0;
     position: absolute;
 }
+
+.card{
+    width: 269px;
+    height: 169px;
+    background-color: #FAFAFA;
+    border-radius: 7px;
+    /* filter: blur(0.6000000238418579px); */
+    
+
+}
+
+.localidade{
+    color: #122330;
+    font-size: 16px;
+    margin: 0;
+}

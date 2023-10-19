@@ -1,12 +1,11 @@
 import './globals.css'
 import styles from './styles.module.css'
 import Image from 'next/image'
+
 // import { Quicksand } from 'next/font/google'
 export const metadata = {
   title: 'Travel Landing Page',
 }
-
-
 
 function Logo({x, y}){
   return(
@@ -49,7 +48,6 @@ function Phone({x,y, numero}){
 }
 
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -63,7 +61,7 @@ export default function RootLayout({ children }) {
           <ItemMenu nome="Blog"/>
           <ItemMenu nome="Videos"/>
           </Menu>
-          <Text1 x={135} y={230} titulo={"Sua Perfeita Lua de Mel"} subTitulo={"Miami é o melhor destino para a sua lua de mel – é um lugar perfeitamente romântico, para casais que gostam de curtir um tempo na praia. "}/>
+          <Text1 x={135} y={230} titulo={"Lua de Mel Perfeita?"} subTitulo={"Miami é o melhor destino para a sua lua de mel – é um lugar perfeitamente romântico, para casais que gostam de curtir um tempo na praia. ✨" }/>
           <Phone x={1102} y={63} numero={"+38(097)8849989"}/>
         </header>
         {children}</body>
