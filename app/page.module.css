@@ -12,13 +12,18 @@
 }
 
 .card{
-    width: 269px;
+    width: 239px;
     height: 169px;
     background-color: #FAFAFA;
     border-radius: 7px;
     /* filter: blur(0.6000000238418579px); */
-    
+}
 
+.cards{
+    display: flex;
+    width: 769px;
+    gap: 26px;
+    position: absolute;
 }
 
 .localidade{
