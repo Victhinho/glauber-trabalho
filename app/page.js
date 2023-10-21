@@ -15,16 +15,18 @@ function Botao({ x, y }) {
 function Card({ localidade, imagem}) {
   return (
     <div className={styles.card}>
-      <p className={styles.localidade}>{localidade}</p>
-      <Image src={Seta} />
-      <Image src={imagem}/>
+      <div className={styles.cabecalhoCard}>
+        <p className={styles.localidade}>{localidade}</p>
+        <Image src={Seta} />
+      </div>
+      <Image src={imagem} className={styles.imagem}/>
     </div>
   )
 }
 
 function Cards({children, x, y}) {
   return(
-    <div className={styles.cards} style={{left:x, top: y}}>
+    <div style={{left:x, top: y}} className={styles.cards} >
       {children}
     </div>
   )
@@ -33,7 +35,7 @@ function Cards({children, x, y}) {
 export default function Home() {
   return (
     <>
-      <Botao x={135} y={560} />
+      <Botao x={135} y={601} />
       <Cards x={135} y={801}>
         <Card localidade="Hawaii" imagem={Hawaii}/>
         <Card localidade="Cyprus" imagem={Cyprus}/>
