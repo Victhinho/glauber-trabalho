@@ -2,6 +2,10 @@ import './globals.css'
 import styles from './styles.module.css'
 import Image from 'next/image'
 
+import Facebook from '../public/facebook.svg'
+import Twitter from '../public/twitter.svg'
+import Linkedin from '../public/linkedin.svg'
+
 // import { Quicksand } from 'next/font/google'
 export const metadata = {
   title: 'Travel Landing Page',
@@ -48,6 +52,16 @@ function Phone({x,y, numero}){
 }
 
 
+function RedeSociais({x, y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.redeSociais}>
+    <Image src={Facebook}/>
+    <Image src={Twitter}/>
+    <Image src={Linkedin}/>
+    </div>
+  )
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -64,6 +78,13 @@ export default function RootLayout({ children }) {
           <Text1 x={135} y={230} titulo={"Lua de Mel Perfeita?"} subTitulo={"Miami é o melhor destino para a sua lua de mel – é um lugar perfeitamente romântico, para casais que gostam de curtir um tempo na praia. ✨" }/>
           <Phone x={1102} y={63} numero={"+38(097)8849989"}/>
         </header>
+        <main>
+          <footer>
+            <RedeSociais x={1175} y={843}>
+
+            </RedeSociais>
+          </footer>
+        </main>
         {children}</body>
     </html>
   )

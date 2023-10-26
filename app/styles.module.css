@@ -69,3 +69,11 @@
     width: 169px;
     height: 23px;
 }
+
+.redeSociais{
+
+    position: absolute;
+    display: flex;
+    gap: 38px;
+    align-items: center;
+}
