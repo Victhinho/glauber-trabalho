@@ -49,3 +49,47 @@
     left: 20px;
     top: 52px;
 }
+
+.palms{
+    position: absolute;
+    width: 794px;
+    height: 795px;
+}
+
+.nuvem1{
+    width: 468px;
+    height: 195px; 
+    position: absolute;
+    left: 326px;
+    bottom:600px
+    
+}
+
+.nuvem2{
+    width: 468px;
+    width: 468px;
+    height: 195px;
+    position: absolute;
+    left: 17px;
+    top: 285px;
+}
+
+.elipse{
+    width: 646px;
+    height: 646px;
+    border-radius: 646px;
+    opacity: 0.8;
+    background: #FFF;
+    filter: blur(125px);
+    position: absolute;
+    left: 74px;
+    top: 28px
+}
+
+.plameira{
+    width: 765px;
+    height: 765px;
+    bottom: 30px;
+    right: 29px;
+    position: absolute;
+}
