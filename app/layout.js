@@ -49,6 +49,7 @@ function Phone({x,y, numero}){
       <p className={styles.numero}>{numero}</p>
     </div>
   )
+  
 }
 
 
